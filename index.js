@@ -1,9 +1,15 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
-// create
+// create static page
+app.use(express.static('public'));
 
-
+// create route pages > index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages/index.html'));
+});
 
 
 
