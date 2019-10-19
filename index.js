@@ -14,7 +14,9 @@ app.set('views', `${__dirname}/views`);
 // create route pages > index.html
 app.get('/', (req, res) => {
   //res.sendFile(path.join(__dirname, 'pages/index.html'));
-  res.render('index');
+  res.render('index', {
+    pageTitle: 'Project Blog'
+  });
 });
 
 // create route pages > about.html
