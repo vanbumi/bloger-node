@@ -75,16 +75,7 @@ app.post('/posts/store', (req, res) => {
     res.redirect('/');
   });
 
-  // const { title, description, content } = req.body;
 
-  // let post = new Post({
-  //   title,
-  //   description,
-  //   content
-  // });
-
-  // post.save();
-  // res.json(post);
 
 
 });
